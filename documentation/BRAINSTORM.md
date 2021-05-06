@@ -20,6 +20,7 @@
 - [ ] Dive into the Stories to define objects, methods, functions, etc
 - [ ] OOP or not?
 - [ ] Github Projects
+- [ ] Create routing endpoints
 
 # DATA STRUCTURE
 
