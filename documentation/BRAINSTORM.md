@@ -1,6 +1,6 @@
 # ARTIFACTS
 
-- [ ] Stories
+- [] Stories
 - [ ] Data Structure
 - [ ] Stack
 - [ ] Mockups
