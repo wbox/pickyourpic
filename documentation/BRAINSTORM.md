@@ -1,13 +1,13 @@
 # ARTIFACTS
 
--[ ] Stories
--[ ] Data Structure
+- [ ] Stories
+- [ ] Data Structure
 - [ ] Stack
 - [ ] Mockups
 
 ## BRAINSTORM
 
-- [ ] Use song search project as reference for the frontend
+- [x] Use song search project as reference for the frontend
 - [ ] We will to add "ADD, UPDATE, DELETE"
 - [ ] User authentication (stretch)
 - [ ] Tensorflow or not?
@@ -16,33 +16,33 @@
 - [ ] Should users with account have profiles?
 - [ ] Selling function?
 - [ ] Public and private pictures?
-- [ ] Mockups
+- [x] Mockups
 - [ ] Dive into the Stories to define objects, methods, functions, etc
 - [ ] OOP or not?
-- [ ] Github Projects
-- [ ] Create routing endpoints
+- [x] Github Projects
+- [x] Create routing endpoints
 
 # DATA STRUCTURE
 
-- [ ] Postgres SQL Database
+- [x] Postgres SQL Database
 - [ ] Redis (stretch)
 - [ ] File System
-- [ ] ERD (https://app.dbdesigner.net/)
-- [ ] DDL (https://app.dbdesigner.net/)
-- [ ] Seeds
-- [ ] SQL Queries based on the "business" rules
-- [ ] API
+- [x] ERD (https://app.dbdesigner.net/)
+- [x] DDL (https://app.dbdesigner.net/)
+- [x] Seeds
+- [x] SQL Queries based on the "business" rules
+- [x] API
 
 # STACK
 
-- [ ] NodeJS
-- [ ] Express
-- [ ] ReactJS
-- [ ] Postgres SQL
-- [ ] NGNIX (loadbalancer)
-- [ ] Docker/Vagrant (container)
-- [ ] HTTPS (letsencrypt)
-- [ ] Portainer (container manager)
+- [x] NodeJS
+- [x] Express
+- [x] ReactJS
+- [x] Postgres SQL
+- [x] NGNIX (loadbalancer)
+- [x] Docker/Vagrant (container)
+- [x] HTTPS (letsencrypt)
+- [x] Portainer (container manager)
 - [ ] Test (stretch?)
   - [ ] Circle CI
   - [ ] Jest
