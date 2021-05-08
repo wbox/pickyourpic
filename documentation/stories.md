@@ -17,6 +17,9 @@
   * Description
   * Tag
   * Location
+* Users can follow other users
+* Users have total likes from its images
+* Users have total number of favourite images
 
 ## Not logged in users
 
