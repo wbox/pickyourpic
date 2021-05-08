@@ -1,22 +1,31 @@
 # User stories
 
-* Guest user can search public images
-* Guest users can buy public images
-* Guest users can create new accounts
+* Users have images
+* Users have collections
+* Users can search images
+* Users can search collections
+* Users can have collections
+* Users can like images
+* Users can follow other users
+* Users can update their image properties
+* Users with account can add images
+* Users with account can delete their own images
 * User account must have first name
 * User account must have last name
 * User account must have an unique email
 * User account must have password (6-20)
 * User account requires confirmation to be activated
-* App users can have their own image portifolio
-* App users can have albuns (private or public) (stretch?)
-* App users can add images
-* App users can delete images
+* Users have total images
+
+
 * App users can change image properties for one or more images
   * Name
   * Description
   * Tag
   * Location
+* Users can follow other users
+* Users have total likes from its images
+* Users have total number of favourite images
 
 ## Not logged in users
 
