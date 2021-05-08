@@ -3,13 +3,11 @@
 * Guest user can search public images
 * Guest users can buy public images
 * Guest users can create new accounts
-
 * User account must have first name
 * User account must have last name
 * User account must have an unique email
 * User account must have password (6-20)
 * User account requires confirmation to be activated
-
 * App users can have their own image portifolio
 * App users can have albuns (private or public) (stretch?)
 * App users can add images
