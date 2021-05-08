@@ -9,7 +9,7 @@
 * User account must have password (6-20)
 * User account requires confirmation to be activated
 * App users can have their own image portifolio
-* App users can have albuns (private or public) (stretch?)
+* App users can have collections (private or public) (stretch?)
 * App users can add images
 * App users can delete images
 * App users can change image properties for one or more images
