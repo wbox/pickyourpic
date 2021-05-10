@@ -130,15 +130,20 @@ Response:
     "publish_date": "date",
     "collection_id": collection_id,
     "user_id": 2,
-    "tags": [ "bird", "nature", "wings" ]
   }
 ]
 ```
 
 
-- /api/images/:user_id
+``` GET /api/images/:id/tags```
 
-- List all images that belongs to user with id = :user_id
+- List all tags for the image id = :id
+
+
+
+```GET /api/images/:user_id```
+
+- List all images that belongs to user id = :user_id
 
 
 ## /api/collections
