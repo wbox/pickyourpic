@@ -69,7 +69,8 @@ Body:
 
 ```POST /api/users/:id/delete```
 
-- Deletes user with user id = :id
+- Delete user with user id = :id
+- Delete all user images and collections as well
 
 Body:
 
@@ -83,7 +84,7 @@ Body:
 
 ```GET /api/images```
 
-List all images
+List all images (select from images table only)
 
 Response:
 
@@ -94,20 +95,14 @@ Response:
     "name": "image name",
     "description": "image description",
     "url": "image url",
-    "publish_date": "date",
-    "collection_id": collection_id,
-    "user_id": 1,
-    "tag_id": 1
+    "publish_date": "date"
   },
     {
     "id": 2,
     "name": "image name",
     "description": "image description",
     "url": "image url",
-    "publish_date": "date",
-    "collection_id": collection_id,
-    "user_id": 2,
-    "tag_id": 2
+    "publish_date": "date"
   }
 ]
 ```
@@ -116,7 +111,7 @@ Response:
 
 Get image with id = :id
 
-Should list all 
+Join images, users, tags tables
 
 Response:
 
@@ -128,27 +123,16 @@ Response:
     "description": "image description",
     "url": "image url",
     "publish_date": "date",
-    "collection_id": collection_id,
-    "user_id": 2,
+    "nickname": "nickname",
+    "tags": [ "bird", "wings", "nature" ]
   }
 ]
 ```
 
-
-``` GET /api/images/:id/tags```
-
-- List all tags for the image id = :id
-
-Response:
-
-```
-[ "birds", "wings", "nature" ]
-```
-
-
 ```GET /api/images/:user_id```
 
 - List all images that belongs to user id = :user_id
+- Join images, users, and tags
 
 Response:
 
@@ -161,8 +145,10 @@ Response:
     "url": "image url",
     "publish_date": "date",
     "collection_id": collection_id,
-    "user_id": 1,
-    "tag_id": 1
+    "collection_name": "bla1",
+    "user_id": id,
+    "nickname": "nickname",
+    "tags": [ "birds", "wings", "nature" ]
   },
     {
     "id": 2,
@@ -171,34 +157,140 @@ Response:
     "url": "image url",
     "publish_date": "date",
     "collection_id": collection_id,
-    "user_id": 1,
-    "tag_id": 2
+    "collection_name": "bla",
+    "user_id": id,
+    "nickname": "nickname",
+    "tags": [ "birds", "wings", "nature" ]
   }
 ]
+```
+
+```GET /api/images/search/:filter```
+
+- List all images with name and tags = :filter
+
+SELECT * FROM images
+JOIN tags
+WHERE image.name like '%filter%'
+OR tag.name like '%filter%'
+
+Response:
+
+```
+[
+  {
+    "id": 1,
+    "name": "image name",
+    "description": "image description",
+    "url": "image url",
+    "publish_date": "date",
+    "collection_id": collection_id,
+    "collection_name": "bla1",
+    "user_id": 1,
+    "nickname": "nickname1",
+    "tags": [ "birds", "wings", "nature" ]
+  },
+    {
+    "id": 2,
+    "name": "image name",
+    "description": "image description",
+    "url": "image url",
+    "publish_date": "date",
+    "collection_id": collection_id,
+    "collection_name": "bla",
+    "user_id": 2,
+    "nickname": "nickname2",
+    "tags": [ "birds", "wings", "nature" ]
+  }
+]
+```
+## POST
+
+```POST /api/images/new```
+
+- Add a new image (one image)
+
+Body:
+```
+{
+  "name": "image name",
+  "description": "image description",
+  "url": "image url",
+  "publish_date": "date",
+  "collection_id": collection_id,
+  "user_id": 1,
+  "tag_id": 2
+}
 ```
 
 
 ## /api/collections
 # GET
 
-- /api/collections
+```GET /api/collections```
 
 List all collections
 
-- /api/collections/:id
+Response:
 
-List all pictures from where collection id = :id
+```
+[
+  {
+    "id": 1,
+    "name": "Collection 1",
+    "user_id": 1
+  },
+  {
+    "id": 2,
+    "name": "Collection 2",
+    "user_id": 1
+  },
+  {
+    "id": 3,
+    "name": "Collection 3",
+    "user_id": 2
+  }
+]
+```
+
+```GET /api/collections/:id```
+
+Collection Details
+
+Response:
+
+```
+[
+  {
+    "id": 1,
+    "name": "Collection 1",
+    "nickname": "Nickname",
+    "images": [ 1, 5, 6, 7]
+  }
+]
+```
 
 # POST
 
-- /api/collections/new
+```POST /api/collections/new```
 
 Create a new collection
 User id is required
 
-- /api/collections/:id/image/new
+Body:
 
-Add a new image to collections
+```
+{ "name": "Collection name", "user_id": user_id }
+```
+
+```POST /api/collections/:id/image/new```
+
+Add a new image to collection
+
+Body:
+```
+{ "collection_id": 1, "image_id": [ 100 ] }
+```
 
 
 
