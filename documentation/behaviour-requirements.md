@@ -42,21 +42,22 @@ GET
 
 /api/collections
 
+###############################################################
 
-## /api/users
-# GET
+# /api/users
+## GET
 
-- /api/users (/users)
+### GET /api/users (/users)
 
 List all users
 
-- /api/users/:id
+### GET /api/users/:id
 
 List user information with id = :id
 
-# POST
+## POST
 
--/api/users/new
+### POST /api/users/new
 
 Creates a new user on the database
 Information required:
@@ -64,6 +65,17 @@ Information required:
   - Last Name
   - Password
   - Avatar (not required, there will a default avatar image)
+
+### POST /api/users/:id/delete
+
+- Deletes user with user id = :id
+
+
+
+
+
+
+
 
 
 
@@ -77,6 +89,10 @@ List all images
 - /api/images/:id
 
 Get image with id = :id
+
+- /api/images/:user_id
+
+- List all images that belongs to user with id = :user_id
 
 
 ## /api/collections
