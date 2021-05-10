@@ -110,11 +110,15 @@ Body:
 }
 ```
 
-### POST /api/users/:id/delete
+```POST /api/users/:id/delete```
 
 - Deletes user with user id = :id
 
+Body:
 
+```
+{ "id": 1 }
+```
 
 
 
