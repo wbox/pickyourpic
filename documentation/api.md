@@ -73,7 +73,7 @@ Response
 
 ```
 
-### GET /api/users/:id
+```GET /api/users/:id```
 
 List user information with id = :id
 
@@ -94,7 +94,7 @@ Response
 
 ## POST
 
-### POST /api/users/new
+```POST /api/users/new```
 
 Creates a new user on the database
 
@@ -108,14 +108,7 @@ Body:
   "password": "password",
   "avatar": "http://"
 }
-
 ```
-Information required:
-  - First Name
-  - Last Name
-  - Password
-  - 
-  - Avatar (not required, there will a default avatar image)
 
 ### POST /api/users/:id/delete
 
