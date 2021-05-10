@@ -139,6 +139,12 @@ Response:
 
 - List all tags for the image id = :id
 
+Response:
+
+```
+[ "birds", "wings", "nature" ]
+```
+
 
 
 ```GET /api/images/:user_id```
