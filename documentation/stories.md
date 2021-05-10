@@ -2,13 +2,13 @@
 
 * Users have images
 * Users have collections
-* Users have total likes from its images
 * Users have followers
 * Users have total downloads (stretch)
 * Users have total of comments (stretch)
+* Users have total of images
+* Users have total likes from its images
 * Users can search images
 * Users can search collections
-* Users can have collections
 * Users can like images
 * Users can follow other users
 * Users can update their image properties
@@ -19,15 +19,6 @@
 * User account must have an unique email
 * User account must have password (6-20)
 * User account requires confirmation to be activated
-* Users have total images
-
-
-* App users can change image properties for one or more images
-  * Name
-  * Description
-  * Tag
-  * Location
-* Users have total number of favourite images
 
 ## Not logged in users
 
