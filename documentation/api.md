@@ -97,7 +97,7 @@ Response:
     "publish_date": "date",
     "collection_id": collection_id,
     "user_id": 1,
-    "tags_id" [ 1, 2, 5, 6]
+    "tag_id": 1
   },
     {
     "id": 2,
@@ -106,8 +106,8 @@ Response:
     "url": "image url",
     "publish_date": "date",
     "collection_id": collection_id,
-    "user_id": 1,
-    "tags_id" [ 1, 3, 5, 7]
+    "user_id": 2,
+    "tag_id": 2
   }
 ]
 ```
