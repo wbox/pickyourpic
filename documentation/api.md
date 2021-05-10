@@ -1,47 +1,4 @@
 
-## Images
-
-### GET /api/images
-
-- If user is not looged in, return public images
-- If user is logged in return public and private images
-- Default filter is most recent images
-
-Response:
-
-[
-  {
-    "id: 1,
-    "name": "Picture name",
-    "description": "Description",
-    "url": "http://....",
-    "tags": [ "tag1", "tag2", "tag3" ],
-    "publish_date": date,
-    "location_info": "location info"
-    "likes": 10,
-    "dislikes": 1,
-  }
-]
-
-## Users
-
-## Collections
-
-
-
-GET 
-
-/api/images/
-/api/images/search/tag
-
-/api/images/users
-/api/images/users/:id
-
-/api/images/collections
-
-/api/collections
-
-###############################################################
 
 # /api/users
 ## GET
@@ -121,13 +78,40 @@ Body:
 ```
 
 
+# /api/images
+## GET
 
-## /api/images
-# GET
-
-- /api/images
+```GET /api/images```
 
 List all images
+
+Response:
+
+```
+[
+  {
+    "id": 1,
+    "name": "image name",
+    "description": "image description",
+    "url": "image url",
+    "publish_date": "date",
+    "collection_id": collection_id,
+    "user_id": 1,
+    "tags_id" [ 1, 2, 5, 6]
+  },
+    {
+    "id": 2,
+    "name": "image name",
+    "description": "image description",
+    "url": "image url",
+    "publish_date": "date",
+    "collection_id": collection_id,
+    "user_id": 1,
+    "tags_id" [ 1, 3, 5, 7]
+  }
+]
+```
+
 
 - /api/images/:id
 
@@ -165,8 +149,51 @@ Add a new image to collections
 
 
 
+########################################################
+
+## Images
+
+### GET /api/images
+
+- If user is not looged in, return public images
+- If user is logged in return public and private images
+- Default filter is most recent images
+
+Response:
+
+[
+  {
+    "id: 1,
+    "name": "Picture name",
+    "description": "Description",
+    "url": "http://....",
+    "tags": [ "tag1", "tag2", "tag3" ],
+    "publish_date": date,
+    "location_info": "location info"
+    "likes": 10,
+    "dislikes": 1,
+  }
+]
+
+## Users
+
+## Collections
 
 
+
+GET 
+
+/api/images/
+/api/images/search/tag
+
+/api/images/users
+/api/images/users/:id
+
+/api/images/collections
+
+/api/collections
+
+###############################################################
 
 
 
