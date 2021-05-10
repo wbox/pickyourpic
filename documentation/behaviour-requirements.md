@@ -74,11 +74,6 @@ Information required:
 
 
 
-
-
-
-
-
 ## /api/images
 # GET
 
