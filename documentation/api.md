@@ -87,6 +87,12 @@ Body:
 - Delete user with user id = :id
 - Delete all user images and collections as well
 
+```
+DELETE
+FROM users
+WHERE id=:id
+```
+
 Body:
 
 ```
@@ -99,7 +105,7 @@ Body:
 
 ```GET /api/images```
 
-List all images (select from images table only)
+List all images 
 
 Response:
 
@@ -110,7 +116,8 @@ Response:
     "name": "image name",
     "description": "image description",
     "url": "image url",
-    "publish_date": "date"
+    "publish_date": "date",
+    "nickname": "Nickname"
   },
     {
     "id": 2,
