@@ -146,10 +146,36 @@ Response:
 ```
 
 
-
 ```GET /api/images/:user_id```
 
 - List all images that belongs to user id = :user_id
+
+Response:
+
+```
+[
+  {
+    "id": 1,
+    "name": "image name",
+    "description": "image description",
+    "url": "image url",
+    "publish_date": "date",
+    "collection_id": collection_id,
+    "user_id": 1,
+    "tag_id": 1
+  },
+    {
+    "id": 2,
+    "name": "image name",
+    "description": "image description",
+    "url": "image url",
+    "publish_date": "date",
+    "collection_id": collection_id,
+    "user_id": 1,
+    "tag_id": 2
+  }
+]
+```
 
 
 ## /api/collections
