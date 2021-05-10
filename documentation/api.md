@@ -347,7 +347,7 @@ FROM tags
 
 ## POST
 
-```POST /api/tags/:id```
+```POST /api/tags/:name/new```
 
 - Add a new image tag
 
