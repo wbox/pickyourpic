@@ -7,6 +7,11 @@
 
 List all users
 
+```
+SELECT * 
+FROM users
+```
+
 Response
 
 ```
@@ -34,6 +39,11 @@ Response
 
 List user information with id = :id
 
+```
+SELECT *
+FROM users
+WHERE user_id = :id
+```
 Response
 
 ```
