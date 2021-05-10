@@ -1,7 +1,11 @@
-# User stories
+# User 
 
 * Users have images
 * Users have collections
+* Users have total likes from its images
+* Users have followers
+* Users have total downloads (stretch)
+* Users have total of comments (stretch)
 * Users can search images
 * Users can search collections
 * Users can have collections
@@ -23,8 +27,6 @@
   * Description
   * Tag
   * Location
-* Users can follow other users
-* Users have total likes from its images
 * Users have total number of favourite images
 
 ## Not logged in users
