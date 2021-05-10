@@ -112,10 +112,29 @@ Response:
 ]
 ```
 
-
-- /api/images/:id
+```GET /api/images/:id```
 
 Get image with id = :id
+
+Should list all 
+
+Response:
+
+```
+[
+  {
+    "id": 2,
+    "name": "image name",
+    "description": "image description",
+    "url": "image url",
+    "publish_date": "date",
+    "collection_id": collection_id,
+    "user_id": 2,
+    "tags": [ "bird", "nature", "wings" ]
+  }
+]
+```
+
 
 - /api/images/:user_id
 
