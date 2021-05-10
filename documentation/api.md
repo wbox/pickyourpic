@@ -241,13 +241,13 @@ Body:
   "publish_date": "date",
   "collection_id": collection_id,
   "user_id": 1,
-  "tag_id": 2
+  "tags": [ 2, 4, 5, 6 ]
 }
 ```
 
 
-## /api/collections
-# GET
+# /api/collections
+## GET
 
 ```GET /api/collections```
 
@@ -292,7 +292,7 @@ Response:
 ]
 ```
 
-# POST
+## POST
 
 ```POST /api/collections/new```
 
@@ -315,6 +315,35 @@ Body:
 ```
 
 
+# /api/tags
+
+## GET
+
+```GET /api/tags```
+
+- List all tags
+
+```
+SELECT *
+FROM tags
+```
+
+```
+[
+  {
+    "id": 1,
+    "name": "birds"
+  },
+  {
+    "id": 2,
+    "name": "nature"
+  },
+  {
+    "id": 3,
+    "name": "planes"
+  }    
+]
+```
 
 
 
