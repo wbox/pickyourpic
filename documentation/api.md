@@ -65,6 +65,11 @@ Response
 
 Creates a new user on the database
 
+```
+INSERT INTO users (first_name, last_name, nickname, password, avatar)
+VALUES ($1, $2, $3, $4, $5)
+```
+
 Body:
 
 ```
