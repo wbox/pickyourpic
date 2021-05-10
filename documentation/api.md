@@ -46,9 +46,32 @@ GET
 # /api/users
 ## GET
 
-### GET /api/users (/users)
+```GET /api/users (/users)```
 
 List all users
+
+Response
+
+```
+[
+  {
+    "id": 1,
+    "first_name": "Name",
+    "last_name: "Last",
+    "nickname": "bla",
+    "avatar": "http://"
+
+  },
+  {
+    "id": 2,
+    "first_name": "Name",
+    "last_name": "Last",
+    "nickname": "bla1",
+    "avatar": "http://"
+  }
+]
+
+```
 
 ### GET /api/users/:id
 
