@@ -97,10 +97,24 @@ Response
 ### POST /api/users/new
 
 Creates a new user on the database
+
+Body:
+
+```
+{
+  "first_name" : "first",
+  "last_name": "last",
+  "nickname": "nickname",
+  "password": "password",
+  "avatar": "http://"
+}
+
+```
 Information required:
   - First Name
   - Last Name
   - Password
+  - 
   - Avatar (not required, there will a default avatar image)
 
 ### POST /api/users/:id/delete
