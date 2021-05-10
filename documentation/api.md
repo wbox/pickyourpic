@@ -77,6 +77,21 @@ Response
 
 List user information with id = :id
 
+Response
+
+```
+[
+  {
+    "id": 1,
+    "first_name": "Name",
+    "last_name: "Last",
+    "nickname": "bla",
+    "avatar": "http://"
+
+  }
+]
+```
+
 ## POST
 
 ### POST /api/users/new
