@@ -16,7 +16,7 @@ CREATE TABLE images (
   name varchar(255) NOT NULL,
   description varchar(255) NOT NULL,
   url varchar(255) NOT NULL,
-  publish_date date NOT NULL,
+  publish_date date NOT NULL
 );
 
 CREATE TABLE image_tags (
@@ -29,13 +29,13 @@ CREATE TABLE collections (
   id SERIAL PRIMARY KEY NOT NULL,
   name VARCHAR(255) NOT NULL,
   user_id INTEGER UNIQUE REFERENCES users(id) ON DELETE CASCADE
-)
+);
 
 CREATE TABLE image_collections (
   id SERIAL PRIMARY KEY NOT NULL,
   collection_id INTEGER UNIQUE REFERENCES collections(id) ON DELETE CASCADE,
-  image_id INTEGER UNIQUE REFERENCES images(id) ON DELETE CASCADE,
-)
+  image_id INTEGER UNIQUE REFERENCES images(id) ON DELETE CASCADE
+);
 
 CREATE TABLE users (
   id SERIAL PRIMARY KEY NOT NULL,
@@ -44,4 +44,4 @@ CREATE TABLE users (
   nickname VARCHAR(255) NOT NULL,
   password VARCHAR(255) NOT NULL,
   avaTAR VARCHAR(255) NOT NULL
-)
+);
