@@ -345,6 +345,51 @@ FROM tags
 ]
 ```
 
+## POST
+
+```POST /api/tags/:id```
+
+- Add a new image tag
+
+```
+INSERT INTO tags (name)
+VALUES ($1)
+```
+
+Body:
+
+```
+{ "name": "birds" }
+```
 
 
+```POST /api/tags/:id/delete```
 
+- Remove a tag
+
+```
+DELETE FROM tags
+WHERE id = $1
+```
+
+Body:
+
+```
+{ "id": [ 1 ] }
+```
+
+```POST /api/tags/:id/update```
+
+- Update a tag name based on the tag id
+
+```
+UPDATE tags
+SET name=$2
+WHERE id=$1
+```
+
+Body:
+
+```
+{ "id": 1, "name": "birds" }
+```
